@@ -1,0 +1,151 @@
+/*----  Main Style  ----*/
+.NowAndComing #cards_landscape_wrap-2 {
+  text-align: center;
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.NowAndComing #cards_landscape_wrap-2 .container {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.NowAndComing #cards_landscape_wrap-2 a {
+  text-decoration: none;
+  outline: none;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer .image-box {
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer .image-box img {
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  width: 100%;
+  height: 220px;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer .text-box {
+  text-align: center;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+  /* padding: 35px 18px; */
+  max-height: 120px;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer {
+  background: #122738;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer:hover {
+  background: black;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer .text-box p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 60px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: white;
+  height: 20px;
+}
+
+.NowAndComing #cards_landscape_wrap-2 .card-flyer .text-box h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #1da1f2;
+}
+
+.NowAndComing .my-navbar {
+  background-color: #122738;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #1da1f2;
+}
+
+.NowAndComing .NowShowing {
+  background-color: #122738;
+  color: #F7F7F7;
+  padding: 17px;
+  border: 2px solid white;
+}
+
+.NowAndComing .NowShowing>h3 {
+  margin-left: 30px;
+  color: #1da1f2;
+  font-style: italic;
+}
+
+.NowAndComing .container1 {
+  background-image: linear-gradient(103.24deg, rgba(0, 3, 8, 0.9) 23.83%, rgba(0, 5, 18, 0.7) 96.1%), url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  border-top: 1px solid #1eabff;
+  border-bottom: 1px solid #1eabff;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.NowAndComing .animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #30d783 0%,
+      #1CE783 29%,
+      #1c5237 67%,
+      #092316 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+  margin-left: -70%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

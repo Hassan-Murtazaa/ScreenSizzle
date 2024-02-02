@@ -1,0 +1,59 @@
+.MainDivOfSeat {
+  background-color: #0b0c0f;
+}
+
+.MainDivOfSeat .container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.MainDivOfSeat .screen {
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 20px rgba(255, 255, 255, 0.7);
+}
+
+.MainDivOfSeat .OuterDivOfSeat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainDivOfSeat .RowNumbering {
+  margin-right: 10px;
+  text-align: center;
+  color: white;
+}
+
+.MainDivOfSeat .seat {
+  height: 45px;
+  width: 40px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  background-color: #333D79FF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+}
+
+.seat.standard {
+  background-color: #333D79FF;
+}
+
+.seat.reserved {
+  background-color: #7b8cde;
+  font-size: 17px;
+  border: 2px solid #ccc;
+}
+
+.MainDivOfSeat .Seatpice {
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,295 @@
+.seatSelection .overlay {
+  background-color: #000000;
+}
+
+.seatSelection .overlay .header {
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+.seatSelection .DivOfInnerSmallCard {
+  position: absolute;
+  top: 208px;
+  margin-left: 100px;
+}
+
+.seatSelection .cont {
+  background-color: #0f0c0b;
+  position: relative;
+  width: 290px;
+  height: 407px;
+}
+
+.seatSelection .cont .image-box {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+}
+
+.seatSelection .cont .image-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+}
+
+.seatSelection .cont:hover .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.seatSelection .cont:hover {
+  background: black;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.seatSelection .InnerCardDescription {
+  position: absolute;
+  top: 208px;
+  margin-left: 440px;
+}
+
+.seatSelection .InnerCardDescription::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.seatSelection .imdb {
+  background-color: #DAB01C;
+  font-family: Kenyan Coffee Font;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.seatSelection .HeaderSelection {
+  padding-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #0b0c0f;
+}
+
+.seatSelection .HeaderSelection .h1 {
+  margin-bottom: 0;
+  position: relative;
+  color: whitesmoke;
+  letter-spacing: 7px;
+  font-weight: bold;
+}
+
+.seatSelection .HeaderSelection * {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.seatSelection .hand .h1 {
+  &:before {
+    content: "👇";
+    font-size: 40px;
+    transform: scaleX(-1);
+    right: -50px;
+    top: 5px;
+    animation: up-down 1s infinite;
+  }
+}
+
+@keyframes up-down {
+  50% {
+    margin-top: -20px;
+  }
+}
+
+.seatSelection .Selection {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #0b0c0f;
+}
+
+.seatSelection .Date {
+  display: flex;
+  flex-direction: column;
+}
+
+.seatSelection .Time {
+  display: flex;
+  flex-direction: column;
+}
+
+.seatSelection .Selection h1 span {
+  letter-spacing: 7px;
+  font-family: fantasy;
+  color: #484848;
+  animation: ani 1.2s linear infinite;
+}
+
+.seatSelection .Selection h1 span:nth-child(1) {
+  animation-delay: .2s;
+}
+
+.seatSelection .Selection h1 span:nth-child(2) {
+  animation-delay: .6s;
+}
+
+.seatSelection .Selection h1 span:nth-child(3) {
+  animation-delay: .8s;
+}
+
+.seatSelection .Selection h1 span:nth-child(4) {
+  animation-delay: 1.0s;
+}
+
+@keyframes ani {
+  0% {
+    color: #44848;
+    text-shadow: none;
+  }
+
+  90% {
+    color: #44848;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 70px #fff123;
+  }
+}
+
+.seatSelection .Selection * {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.seatSelection .Date .buttons {
+  .hands {
+
+    &:before,
+    &:after {
+      content: "👇";
+      font-size: 25px;
+      opacity: 0;
+      transition: 0.4s ease-in-out;
+    }
+
+    &:before {
+      transform: rotate(-60deg);
+      left: -45px;
+      top: -10px;
+    }
+
+    &:after {
+      transform: rotate(170deg);
+      right: 30px;
+      top: 50px;
+    }
+  }
+
+  &:focus .hands {
+    &:before {
+      opacity: 1;
+      left: -35px;
+    }
+
+    &:after {
+      opacity: 1;
+      top: 40px;
+    }
+  }
+}
+
+.seatSelection .Time .buttons2 {
+  .hands2 {
+
+    &:before,
+    &:after {
+      content: "👇";
+      font-size: 20px;
+      opacity: 0;
+      transition: 0.4s ease-in-out;
+    }
+
+    &:before {
+      transform: rotate(-60deg);
+      left: -45px;
+      top: -10px;
+    }
+
+    &:after {
+      transform: rotate(170deg);
+      right: 30px;
+      top: 50px;
+    }
+  }
+
+  &:focus .hands2 {
+    &:before {
+      opacity: 1;
+      left: -35px;
+    }
+
+    &:after {
+      opacity: 1;
+      top: 40px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .seatSelection .cont {
+    width: 250px;
+    height: 310px;
+  }
+}
+
+@media (max-width: 992px) {
+  .seatSelection .cont {
+    width: 200px;
+    height: 300px;
+  }
+
+  .seatSelection .DivOfInnerSmallCard {
+    position: relative;
+    top: 40px;
+    float: left;
+    margin-left: 30px;
+  }
+
+  .seatSelection .InnerCardDescription {
+    position: relative;
+    top: 40px;
+    margin-left: 280px;
+    margin-right: 5px;
+  }
+}

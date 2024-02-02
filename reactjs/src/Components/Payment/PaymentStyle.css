@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.payment .containerr .card {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: rgb(0, 0, 0, 0.6);
+    border-radius: 0px;
+    border-bottom: 1px solid #1eabff;
+}
+
+.payment .body {
+    background-image: linear-gradient(103.24deg, rgba(0, 2, 7, 0.9) 23.83%, rgba(0, 0, 0, 0.3) 96.1%), url('https://assets.nflxext.com/ffe/siteui/vlv3/efb4855d-e702-43e5-9997-bba0154152e0/aeda5289-8647-4509-b537-5236f7852c43/PK-en-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+
+.payment .btn.btn-primary {
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+}
+
+.payment .btn.btn-primary:focus {
+    box-shadow: none;
+}
+
+.payment .containerr .card .img-box {
+    width: 90px;
+    height: 50px;
+}
+
+.payment .containerr .card img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.payment .containerr .card .number {
+    font-size: 24px;
+}
+
+.payment .containerr .card-body .btn.btn-primary .fab.fa-cc-stripe {
+    font-size: 40px;
+
+}
+
+.payment .fab.fa-cc-amex {
+    color: #194e1e;
+    font-size: 32px;
+}
+
+.payment .fab.fa-cc-mastercard {
+    font-size: 32px;
+    color: red;
+}
+
+.payment .fab.fa-cc-discover {
+    font-size: 32px;
+    color: orange;
+}
+
+.payment .c-green {
+    color: green;
+}
+
+.payment .box {
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment .btn.btn-primary.payment {
+    color: white;
+    border-radius: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.payment .form__div {
+    height: 50px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.payment .form-control {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    border: 1px solid #DADCE0;
+    border-radius: 0;
+    outline: none;
+    padding: 2px;
+    background: none;
+    z-index: 1;
+    box-shadow: none;
+    color: white;
+}
+
+.payment .form__label {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    color: white;
+    font-size: 16px;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.payment .form-control+.form__label {
+    top: -14px;
+    left: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 10;
+    color: white;
+    font-weight: bolder;
+}
+
+.payment .form-control:focus {
+    border: 1.5px solid white
+}
+
+.payment .stripe-checkout-button {
+    background-color: #ddff00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}

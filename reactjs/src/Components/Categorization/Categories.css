@@ -1,0 +1,73 @@
+.categoriees .card-title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* cards */
+.categoriees .cont {
+    background-color: #0b0c0f;
+    color: #1CE783;
+}
+
+/* All The Movies You Love */
+.categoriees .pad-top {
+    padding-top: 90px !important;
+    color: white;
+    background-color: #0b0c0f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.categoriees .cont .image-box {
+    /*cards 4 minor corners */
+    background: #17191d;
+    /*------------------------ */
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+}
+
+.categoriees .cont .image-box img {
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+}
+
+.categoriees .cont:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.categoriees .cont:hover {
+    background-color: #101116;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.categoriees .cat {
+    background-color: #0b0c0f;
+    display: flex;
+    justify-content: center;
+}
+
+.categoriees .cat2 {
+    margin: 0;
+    padding: 0;
+}
+
+.categoriees li {
+    list-style-type: none;
+}
+
+.categoriees nav ul li a {
+    text-decoration: none;
+}

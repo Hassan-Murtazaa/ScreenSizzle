@@ -1,0 +1,35 @@
+.collagge .overlay {
+    background-color: #000000;
+}
+
+.collagge .overlay img {
+    opacity: 0.2;
+    overflow-x: hidden;
+}
+
+.collagge .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.collagge .centered h1 {
+    color: #1CE783;
+    letter-spacing: .3rem;
+    font-family: cursive;
+}
+
+.collagge .bCustom {
+    background-color: #1CE783;
+    border: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.collagge .bCustom:hover {
+    background-color: #30b171;
+    color: black;
+    opacity: 0.6;
+    border-radius: 20px;
+}

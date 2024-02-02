@@ -1,0 +1,94 @@
+.actionList .nav {
+    --bs-nav-link-color: white;
+    background-color: #0b0c0f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.actionList .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 52px;
+}
+
+.actionList .card-body p {
+    color: whitesmoke;
+    padding-top: 7px;
+    text-align: justify;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* start showing ellipsis when 3rd line is reached */
+    -webkit-line-clamp: 3;
+    /* let the text wrap preserving spaces */
+    white-space: pre-wrap;
+}
+
+.actionList .List {
+    background-color: #0b0c0f;
+    display: flex;
+    justify-content: center;
+}
+
+.actionList .cont {
+    background-color: #0b0c0f;
+    color: #1CE783;
+}
+
+.actionList .cont .image-box {
+    /*cards 4 minor corners */
+    background: #17191d;
+    /*------------------------ */
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+}
+
+.actionList .cont .image-box img {
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+}
+
+.actionList .cont:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.actionList .cont:hover {
+    background: #101116;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.actionList .cont .image-box img {
+    height: 198px;
+}
+
+/* EXTRA */
+.actionList .List2 {
+    margin: 0;
+    padding: 0;
+}
+
+.actionList li {
+    list-style-type: none;
+}
+
+.actionList ul li a {
+    text-decoration: none;
+}

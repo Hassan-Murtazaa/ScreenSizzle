@@ -1,0 +1,281 @@
+.FoodKiMainDiv .itemsMenu {
+    color: white;
+    padding-left: 200px;
+    padding-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0b0c0f;
+    animation-name: glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 5px #fff, 0px 0px 5px #614ad3;
+    }
+
+    to {
+        text-shadow: 0px 0px 20px #fff, 0px 0px 20px #614ad3;
+    }
+}
+
+.FoodKiMainDiv .MenuButtonsIncrement {
+    background-color: rgb(32, 182, 188);
+    margin-left: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+.FoodKiMainDiv .MenuButtonsIncrement:hover {
+    background-color: rgb(95, 213, 217);
+    margin-left: 20px;
+}
+
+.FoodKiMainDiv .MenuButtonsDecrement {
+    background-color: rgb(225, 20, 20);
+    margin-left: 80px;
+    margin-top: 20px;
+    color: black;
+}
+
+.FoodKiMainDiv .MenuButtonsDecrement:hover {
+    background-color: rgb(221, 67, 67);
+    margin-left: 80px;
+}
+
+.FoodKiMainDiv .TotalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --glow-color: hsl(186 100% 69%);
+}
+
+.FoodKiMainDiv .cartButton {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.12em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    font-family: "Raleway", sans-serif;
+    perspective: 2em;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    box-shadow: inset 0 0 0.5em 0 var(--glow-color), 0 0 0.5em 0 var(--glow-color);
+    animation: border-glow 2s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes border-glow {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.1;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Button Shadow */
+.FoodKiMainDiv .cartButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+}
+
+.FoodKiMainDiv .cartButton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+}
+
+.FoodKiMainDiv .cartButton:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+}
+
+.FoodKiMainDiv .cartButton:hover::after {
+    opacity: 1;
+}
+
+.FoodKiMainDiv .cartButton:hover::before {
+    filter: blue(1.5em);
+    opacity: 1;
+}
+
+.FoodKiMainDiv .cartButton:hover .glowing-txt {
+    animation: none;
+}
+
+.FoodKiMainDiv .glowing-txt {
+    float: left;
+    margin-right: -0.8em;
+    text-shadow: 0 0 0.12em hsl(0 0% 100% / 0.3);
+    animation: text-glow 3s linear infinite;
+}
+
+@keyframes text-glow {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.1;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    72% {
+        opacity: 0.2;
+    }
+
+    77% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.modalWindow .modal-body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.FoodKiMainDiv .card-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 52px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.FoodKiMainDiv .card-body h4 {
+    padding-top: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.FoodKiMainDiv .card-body h5 {
+    padding-top: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.FoodKiMainDiv .List {
+    background-color: #0b0c0f;
+    display: flex;
+    justify-content: center;
+}
+
+.FoodKiMainDiv .MenuCard {
+    background-color: #101116;
+    color: #1CE783;
+    transition: 0.5s;
+}
+
+.FoodKiMainDiv .MenuCard:hover {
+    box-shadow: 0 5px 15px #afe0f5;
+    border: none;
+    text-shadow: 0 0 5px #1CE783;
+}
+
+.FoodKiMainDiv .MenuCard .image-box img {
+    height: 250px;
+}
+
+.FoodKiMainDiv .MenuCard .image-box img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.FoodKiMainDiv .MenuCard:hover .image-box img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/* @media(max-width:1370px) {
+    .FoodKiMainDiv .itemsMenu {
+        padding-left: 150px;
+    }
+}
+
+@media(max-width:500px) {
+    .FoodKiMainDiv .itemsMenu {
+        padding-left: 200px;
+    }
+}
+
+@media(max-width:600px) {
+    .FoodKiMainDiv .itemsMenu {
+        padding-left: 200px;
+    }
+
+} */

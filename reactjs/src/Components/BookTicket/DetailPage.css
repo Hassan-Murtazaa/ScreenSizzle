@@ -1,0 +1,198 @@
+.Main-Div-Detail-Page {
+    background-color: #0B0C0F;
+}
+
+.Main-Div-Detail-Page .WholeInnerInfo {
+    position: absolute;
+    top: 150px;
+    margin-left: 200px;
+    width: 40%;
+}
+
+.Main-Div-Detail-Page .Filmname {
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.Main-Div-Detail-Page .CategorySection {
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-left: 12px;
+}
+
+.Main-Div-Detail-Page .FilmDescription {
+    background-color: rgb(0, 0, 0, 0.3);
+    padding-left: 12px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.Main-Div-Detail-Page .DetailPageButton {
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+    padding: 15px;
+    margin-top: 80px;
+    margin-left: 12px;
+}
+
+.Main-Div-Detail-Page .DetailPageButton:hover {
+    background-color: rgb(251, 99, 99);
+    border-color: rgb(251, 99, 99);
+}
+
+.Main-Div-Detail-Page #YoutubeLink {
+    aspect-ratio: 16 / 9;
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.Main-Div-Detail-Page .AlsoLike {
+    color: white;
+    margin-left: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Main-Div-Detail-Page .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 52px;
+}
+
+.Main-Div-Detail-Page .card-body p {
+    color: whitesmoke;
+    padding-top: 7px;
+    text-align: justify;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* start showing ellipsis when 3rd line is reached */
+    -webkit-line-clamp: 3;
+    /* let the text wrap preserving spaces */
+    white-space: pre-wrap;
+}
+
+.Main-Div-Detail-Page .List {
+    background-color: #0b0c0f;
+    display: flex;
+    justify-content: center;
+}
+
+.Main-Div-Detail-Page .cont {
+    background-color: #0b0c0f;
+    color: #1CE783;
+}
+
+.Main-Div-Detail-Page .cont .image-box {
+    background: #17191d;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+}
+
+.Main-Div-Detail-Page .cont .image-box img {
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+}
+
+.Main-Div-Detail-Page .cont:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.Main-Div-Detail-Page .cont:hover {
+    background: #101116;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.Main-Div-Detail-Page .cont .image-box img {
+    height: 198px;
+}
+
+@media(max-width:1270px) {
+    .Main-Div-Detail-Page .WholeInnerInfo {
+        position: relative;
+        top: 40px;
+        margin-left: 100px;
+        margin-right: 50px;
+        width: 80%;
+    }
+
+    .Main-Div-Detail-Page #YoutubeLink {
+        margin-left: 120px;
+    }
+
+    .Main-Div-Detail-Page .AlsoLike {
+        color: white;
+        margin-left: 145px;
+    }
+}
+
+@media(max-width:500px) {
+    .Main-Div-Detail-Page .WholeInnerInfo {
+        position: relative;
+        top: 40px;
+        margin-left: 60px;
+    }
+
+    .Main-Div-Detail-Page #YoutubeLink {
+        margin-left: 70px;
+    }
+
+    .Main-Div-Detail-Page .AlsoLike {
+        color: white;
+        margin-left: 125px;
+    }
+}
+
+@media(max-width:600px) {
+    .Main-Div-Detail-Page .WholeInnerInfo {
+        position: relative;
+        top: 40px;
+        margin-left: 70px;
+    }
+
+    .Main-Div-Detail-Page #YoutubeLink {
+        margin-left: 70px;
+    }
+
+    .Main-Div-Detail-Page .AlsoLike {
+        color: white;
+        margin-left: 120px;
+    }
+
+    .Main-Div-Actor-Details .card {
+
+        margin-top: 100px;
+    }
+}
